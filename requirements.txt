@@ -1,0 +1,11 @@
+streamlit
+langgraph
+langchain-google-genai
+tavily
+markdown-pdf
+reportlab
+googlemaps
+requests
+langchain-community
+wikipedia
+airportsdata
