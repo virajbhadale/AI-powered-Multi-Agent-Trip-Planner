@@ -108,6 +108,26 @@ The system uses a network of AI agents to automatically research destinations, s
 
 ---
 
+## Key Engineering Decisions
+
+### Why LangGraph?
+Used to represent the travel-planning process as an explicit stateful workflow
+with specialized agent nodes and controlled transitions.
+
+### Why multiple agents?
+Different tasks require different tools, prompts, and data sources.
+
+### Why external APIs?
+Flight, weather, and destination information changes dynamically and
+should not be generated purely by the LLM.
+
+### Why a synchronization step?
+Parallel data retrieval must complete before itinerary synthesis.
+
+### Why Streamlit?
+Provides a lightweight interface for validating the end-to-end workflow.
+
+
 ## 🏗️ Multi-Agent Workflow
 
 Research Agent
@@ -125,6 +145,16 @@ Itinerary Agent
 PDF & Email Export
 
 ---
+
+## Current Limitations
+
+- Hotel information is currently obtained through web search rather than
+  direct booking APIs.
+- Flight results depend on external search/API availability.
+- Generated itineraries require validation of retrieved travel information.
+- API availability and rate limits can affect execution.
+- Multi-city planning is currently a future enhancement.
+  
 
 ## 📂 Project Structure
 
