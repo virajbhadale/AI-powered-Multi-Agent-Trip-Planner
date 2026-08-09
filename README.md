@@ -134,7 +134,7 @@ RP_Project/
 ├── .streamlit/
 │   └── secrets.toml
 │
-├── agents_final_6.py
+├── travel_planner_app.py
 ├── requirements.txt
 ├── README.md
 │
@@ -170,7 +170,7 @@ gmail_app_password="YOUR_GMAIL_APP_PASSWORD"
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/AI-Travel-Agent.git
+git clone https://github.com/virajbhadale/AI-powered-Multi-Agent-Trip-Planner.git
 cd AI-Travel-Agent
 ```
 
@@ -203,7 +203,7 @@ pip install -r requirements.txt
 ### Run Application
 
 ```bash
-streamlit run agents_final_6.py
+streamlit run travel_planner_app.py
 ```
 
 ---
